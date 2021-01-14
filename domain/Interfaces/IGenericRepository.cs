@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Aplication.Interfaces
+namespace Domain.Interfaces
 {
     public interface IGenericRepository<TEntity> where TEntity : BaseEntitie
     {

@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities
 {
-    public class UsuarioEntitie : BaseEntitie
+    public class Usuario : BaseEntitie
     {
         public string Nome { get; set; }
 
