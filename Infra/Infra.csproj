@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\domain\Domain.csproj" />
+    <ProjectReference Include="..\hackathoncrr.Aplication\Aplication.csproj" />
   </ItemGroup>
 
 </Project>
