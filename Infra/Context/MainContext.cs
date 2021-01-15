@@ -25,4 +25,3 @@ namespace Infra.Context
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(MainContext).Assembly);
     }
 }
-}
