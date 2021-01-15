@@ -1,4 +1,10 @@
+using Aplication.Interfaces;
+using Aplication.Services;
+using Domain.Interfaces;
+using Domain.Interfaces.Validation;
+using Domain.Validation;
 using Infra.Context;
+using Infra.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -33,6 +39,11 @@ namespace hackathoncrr
             AddDbContextCollection(services);
 
             services.AddControllers();
+
+            services.AddCors();
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IUsuarioValidacao, UsuarioValidacao>();
+            services.AddScoped<IUsuarioService, UsuarioService>();
 
 
 
