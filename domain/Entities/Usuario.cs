@@ -9,5 +9,9 @@
         public string Telefone { get; set; }
 
         public Renda Renda { get; set; }
+
+        public Pessoa Pessoa { get; set; }
+
+        public string Senha { get; set; }
     }
 }

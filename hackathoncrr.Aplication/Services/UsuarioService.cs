@@ -48,5 +48,15 @@ namespace Aplication.Services
             }
             return erros;
         }
+
+        public IEnumerable<Usuario> ListarTodos()
+        {
+            return _usuarioRepository.GetAll();
+        }
+
+        public Usuario PesquisarPorId(Guid id)
+        {
+            return _usuarioRepository.ObterPorID(id);
+        }
     }
 }

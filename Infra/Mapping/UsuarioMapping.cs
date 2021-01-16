@@ -13,6 +13,8 @@ namespace Infra.Mapping
             builder.Property(q => q.Telefone).IsRequired().HasMaxLength(20);
             builder.Property(q => q.Email).IsRequired().HasMaxLength(150);
             builder.Property(q => q.Renda).IsRequired();
+            builder.Property(q => q.Senha).IsRequired();
+            builder.Property(q => q.Pessoa).IsRequired();
         }
     }
 }

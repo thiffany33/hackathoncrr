@@ -9,5 +9,7 @@ namespace Aplication.Interfaces
         public List<string> Deletar(Guid id);
         public List<string> Editar(Usuario usuario);
         public List<string> Cadastrar(Usuario usuario);
+        public Usuario PesquisarPorId(Guid id);
+        public IEnumerable<Usuario> ListarTodos();
     }
 }

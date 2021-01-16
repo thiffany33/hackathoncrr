@@ -2,6 +2,10 @@
 using Domain.Interfaces;
 using Infra.Context;
 using Infra.Repository.GenericRepository;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Infra.Repository
 {
@@ -10,6 +14,11 @@ namespace Infra.Repository
         public UsuarioRepository(MainContext mainContext)
             : base(mainContext)
         {
+        }
+
+        public Usuario ObterPorID(Guid id)
+        {
+            return Query().FirstOrDefault(q => q.Id == id);
         }
     }
 }

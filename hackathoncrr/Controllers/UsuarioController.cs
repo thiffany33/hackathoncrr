@@ -52,5 +52,19 @@ namespace API.Controllers
             }
             return Ok("Deletado com Sucesso");
         }
+
+        [HttpGet]
+        [Route("PesquisarPorId")]
+        public ActionResult PesquisarPorId(Guid id)
+        {
+            return Ok(_usuarioService.PesquisarPorId(id));
+        }
+
+        [HttpGet]
+        [Route("ListarTodos")]
+        public ActionResult ListarTodos()
+        {
+            return Ok(_usuarioService.ListarTodos());
+        }
     }
 }
