@@ -2,9 +2,7 @@
 using Domain.Interfaces;
 using Infra.Context;
 using Infra.Repository.GenericRepository;
-using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace Infra.Repository
