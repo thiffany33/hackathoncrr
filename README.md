@@ -1,6 +1,5 @@
-# HACKATHON CRR
+# TRILHAÊ
 
-Banco de Dados para Login de Usuário. 
-Não tem aplicação, é apenas o banco de dados. 
-
-
+### Banco de dados.
+Não tem nenhuma aplicação, é apenas o banco de dados. 
+Para rodar e logar seguir as instruções que estão aqui: https://github.com/rafael-olivi/hackathon-ccr/tree/thiffany33
